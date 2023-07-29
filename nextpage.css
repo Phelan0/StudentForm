@@ -1,0 +1,65 @@
+*,
+*:before,
+*:after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    background-color: rgb(7, 7, 156);
+}
+.all{
+    background-color: aliceblue;
+    margin: 10px 40px 40px 40px;
+    border: 4px double black;
+}
+h1{
+    text-align: center;
+}
+.mana{
+    margin-left: 50px;
+}
+.name{
+    margin-top: 15px;
+    margin-bottom: 5px;
+    margin-left: 24px;
+}
+.dob{
+    margin-left: 28px;
+    margin-bottom: 5px;
+}
+.gen{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 15px;
+}
+.cla{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 29px;
+}
+button{
+    margin-left: 125px;
+}
+.h1a{
+    margin: 50px auto 20px auto;
+}
+table, th, td{
+    border:5px solid black;
+    border-collapse:collapse;
+}
+th{
+    height: 34px;
+}
+.del{
+    color: blue;
+    text-decoration: underline;
+}
+.total{
+    margin-left: 90%;
+}
+.error{
+    color: red;
+}
+

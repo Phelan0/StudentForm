@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nextpage.html</title>
+    <link rel="stylesheet" href="nextpage.css">
+</head>
+<body onload="renderListStudent()">
+    <div class="all">
+        <!-- student managenment -->
+        <h1>Student managenment</h1>
+        <div class="mana">       
+            <form action="" class="name">
+                Student Name:
+                <input type="text" placeholder="Input student name" id="fullname">
+                <span id="fullname-error" class="error"></span>
+            </form>    
+            <form action="" class="dob">
+                Student DOB: 
+                <input type="date" id="dob">
+                <span id="dob-error" class="error"></span>
+            </form>
+            <form action="" class="gen">
+                Student Gender: 
+                <input type="radio" name="gender" value="male" id="male">Male
+                <input type="radio" name="gender" value="female" id="female">Female
+                <span id="gender-error" class="error"></span>
+            </form>
+            <form action="">
+                Student Language:
+                <input type="checkbox" name="lang" value="english" id="english">English
+                <input type="checkbox" name="lang" value="vietnamese" id="vietnamese">Vietnamese
+                <input type="checkbox" name="lang" value="japanese" id="japanese">Japanese
+                <input type="checkbox" name="lang" value="chinese" id="chinese">Chinese
+                <input type="checkbox" name="lang" value="french" id="french">French
+                <span id="language-error" class="error"></span>
+            </form>
+            <form action="" class="cla">
+                Student Class:
+                <select id="class1">
+                    <option value="">Class</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+                <span id="class-error" class="error"></span>
+            </form>
+            <button type="button" onclick="confirmSave()"> Add </button>
+        </div>    
+        <!-- student list -->
+        <h1 class="h1a">Student List</h1>
+        <div class="list" id="list">
+            <table id="grid-students" style="width:100%">
+            </table>             
+        </div>
+        <div class="total">
+            <p><strong>Total:</strong> <u id="total"></u><u>students</u></p>
+        </div>
+    </div> 
+    <script src='https://cdn.jsdelivr.net/g/lodash@4(lodash.min.js+lodash.fp.min.js)'></script>
+    <script src="nextpage.js"></script>
+</body>
+</html>
